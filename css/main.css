@@ -1,0 +1,46 @@
+html {
+  font-family: "Fredoka One", sans-serif;
+  background-color: #b3fbff;
+}
+
+.intro {
+  position: absolute;
+  left: 30px;
+  top: 60px;
+  animation: appear 2s linear forwards;
+}
+
+@keyframes appear {
+
+  0% {
+    transform: scaleX(0);
+  }
+
+  40% {
+    transform: scaleX(1);
+  }
+}
+
+h1 {
+  color: #990073;
+  transform-origin: left center;
+  transform: rotate(-10deg);
+}
+
+p {
+  color: #c09;
+  max-width: 19em;
+  transform-origin: left center;
+  transform: rotate(-6deg)
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  border: 2px solid #990073;
+  border-radius: 2px;
+  background-color: transparent;
+  color: #c09;
+}
