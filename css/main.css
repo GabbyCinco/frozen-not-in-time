@@ -3,24 +3,6 @@ html {
   background-color: #b3fbff;
 }
 
-.intro {
-  position: absolute;
-  left: 30px;
-  top: 60px;
-  animation: appear 2s linear forwards;
-}
-
-@keyframes appear {
-
-  0% {
-    transform: scaleX(0);
-  }
-
-  40% {
-    transform: scaleX(1);
-  }
-}
-
 h1 {
   color: #990073;
   transform-origin: left center;
@@ -31,7 +13,7 @@ p {
   color: #c09;
   max-width: 19em;
   transform-origin: left center;
-  transform: rotate(-6deg)
+  transform: rotate(-6deg);
 }
 
 a {
@@ -43,4 +25,137 @@ a {
   border-radius: 2px;
   background-color: transparent;
   color: #c09;
+}
+
+.intro {
+  position: relative;
+  left: 70px;
+  top: 130px;
+  animation: appear 2s linear forwards;
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .2));
+}
+
+@keyframes appear {
+
+  0% {
+    transform: scaleX(0);
+  }
+
+  40% {
+    transform: scaleX(1);
+  }
+
+}
+
+.ice-cream {
+  position: absolute;
+  right: 300px;
+  transform: scale(.7);
+  top: 100px;
+}
+
+.cone {
+  position: absolute;
+  z-index: 2;
+  top: 200px;
+  animation: cone .2s linear forwards;
+  transform-origin: bottom;
+}
+
+@keyframes cone {
+
+  0% {
+    transform: translateX(0);
+    transform: translateY(-400px);
+  }
+
+  100% {
+    transform: translateY(150px);
+  }
+
+}
+
+.mint-chip {
+  position: absolute;
+  z-index: 1;
+  animation: mint .4s linear forwards;
+  transform-origin: bottom;
+}
+
+@keyframes mint {
+
+  0% {
+    transform: translateX(0);
+    transform: translateY(-400px);
+  }
+
+  100% {
+    transform: translateY(200px);
+  }
+
+}
+
+.chocolate-chip {
+  position: absolute;
+  z-index: 3;
+  animation: choco .7s linear forwards;
+  transform-origin: bottom;
+}
+
+@keyframes choco {
+
+  0% {
+    transform: translateX(0);
+    transform: translateY(-450px);
+  }
+
+  100% {
+    transform: translateY(72px);
+  }
+
+}
+
+.vanilla-fudge {
+  position: absolute;
+  z-index: 4;
+  animation: vanilla .9s linear forwards;
+  transform-origin: bottom;
+}
+
+@keyframes vanilla {
+
+  0% {
+    transform: translateX(0);
+    transform: translateY(-500px);
+  }
+
+  100% {
+    transform: translateY(-20px);
+  }
+
+}
+
+.cherry {
+  position: absolute;
+  right: -125px;
+  z-index: 5;
+  animation: cherry 1s linear forwards;
+  transform-origin: bottom;
+}
+
+@keyframes cherry {
+
+  0% {
+    transform: translateX(0);
+    transform: translateY(-400px);
+  }
+
+  70% {
+    transform: translateY(-400px);
+  }
+
+  100% {
+    transform: translateY(-85px);
+  }
+
 }
