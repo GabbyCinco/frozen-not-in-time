@@ -43,8 +43,8 @@ a {
 .intro {
   position: relative;
   transform-origin: left center;
-  left: 70px;
-  top: 130px;
+  left: 57px;
+  top: 110px;
   animation: intro 1s linear;
   text-shadow: 1px 1px 1px;
 }
@@ -72,7 +72,7 @@ a {
 
 .ice-cream {
   position: absolute;
-  right: -130px;
+  right: -151px;
   transform: scale(.7);
   top: 100px;
   min-height: 480px;
@@ -81,7 +81,7 @@ a {
 .cone {
   position: absolute;
   z-index: 2;
-  top: 305px;
+  top: 230px;
   animation: cone .5s linear forwards;
   transform-origin: bottom;
   width: 180px;
@@ -94,7 +94,7 @@ a {
   }
 
   100% {
-    top: 305px;
+    top: 230px;
   }
 
 }
@@ -102,7 +102,7 @@ a {
 .mint-chip {
   position: absolute;
   z-index: 1;
-  top: 280px;
+  top: 105px;
   animation: mint .7s linear forwards;
   transform-origin: bottom;
   width: 180px;
@@ -115,7 +115,7 @@ a {
   }
 
   100% {
-    top: 160px;
+    top: 105px;
   }
 
 }
@@ -123,7 +123,7 @@ a {
 .chocolate-chip {
   position: absolute;
   z-index: 3;
-  top: 60px;
+  top: 10px;
   animation: choco 1s linear forwards;
   transform-origin: bottom;
   width: 180px;
@@ -132,11 +132,11 @@ a {
 @keyframes choco {
 
   0% {
-  top: -930px;
+    top: -930px;
   }
 
   100% {
-    top: 60px;
+    top: 10px;
   }
 
 }
@@ -144,7 +144,7 @@ a {
 .vanilla-fudge {
   position: absolute;
   z-index: 4;
-  top: -30px;
+  top: -110px;
   animation: vanilla 1.3s linear forwards;
   transform-origin: bottom;
   width: 180px;
@@ -157,7 +157,7 @@ a {
   }
 
   100% {
-    top: -30px;
+    top: -110px;
   }
 
 }
@@ -166,9 +166,8 @@ a {
   position: absolute;
   z-index: 5;
   left: 54px;
-  top: -1000px;
+  top: -170px;
   animation: cherry 1.5s linear forwards;
-  height: 180px;
 }
 
 @keyframes cherry {
@@ -178,7 +177,7 @@ a {
   }
 
   100% {
-    top: -90px;
+    top: -170px;
   }
 
 }
